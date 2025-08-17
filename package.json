@@ -1,16 +1,17 @@
 {
-  "name": "bun-app",
+  "name": "node-app",
   "module": "index.ts",
   "type": "module",
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.2"
   },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "scripts": {
+    "dev": "node ./src/bin.js"
   },
   "dependencies": {
     "@types/express": "^5.0.0",
-    "express": "^4.21.2",
-    "os": "^0.1.2"
+    "express": "^4.21.2"
   }
 }
